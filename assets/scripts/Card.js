@@ -1,11 +1,16 @@
 class Card extends Phaser.GameObjects.Sprite {
   constructor(scene, value, position) {
-    super(scene, 0.5, 0.5, "card");
+    super(scene, 0, 0, "card");
     this.scene = scene;
     this.value = value;
     this.scene.add.existing(this);
     this.opened = false;
     this.setInteractive();
+  }
+  init(position) {
+    this.position = position;
+    this.close();
+    this.setPosition(-this.width, -this.height);
   }
   flip() {
     this.scene.tweens.add({
