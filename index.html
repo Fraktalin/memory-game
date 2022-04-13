@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      @font-face {
+        font-family: "curseCasual";
+        src: url(./assets/fonts/CurseCasual.ttf);
+      }
       body {
         margin: 0;
         padding: 0;
@@ -13,9 +17,15 @@
       canvas {
         width: 100%;
       }
+      .fontPreload {
+        font-family: "curseCasual";
+        position: absolute;
+        left: -100px;
+      }
     </style>
   </head>
   <body>
+    <div class="fontPreload">.</div>
     <script src="./assets/scripts/phaser.js"></script>
     <script src="./assets/scripts/GameScene.js"></script>
     <script src="./assets/scripts/Card.js"></script>
