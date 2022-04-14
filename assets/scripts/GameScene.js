@@ -6,11 +6,11 @@ class GameScene extends Phaser.Scene {
     this.load.image("bg", "/assets/sprites/background.png");
     this.load.image("card", "/assets/sprites/card.png");
 
-    this.load.image("card1", "/assets/sprites/card1.png");
-    this.load.image("card2", "/assets/sprites/card2.png");
-    this.load.image("card3", "/assets/sprites/card3.png");
-    this.load.image("card4", "/assets/sprites/card4.png");
-    this.load.image("card5", "/assets/sprites/card5.png");
+    this.load.image("card1", "./assets/sprites/card1.png");
+    this.load.image("card2", "./assets/sprites/card2.png");
+    this.load.image("card3", "./assets/sprites/card3.png");
+    this.load.image("card4", "./assets/sprites/card4.png");
+    this.load.image("card5", "./assets/sprites/card5.png");
     this.load.audio("theme", "./assets/sounds/theme.mp3");
     this.load.audio("card", "./assets/sounds/card.mp3");
     this.load.audio("complete", "./assets/sounds/complete.mp3");
